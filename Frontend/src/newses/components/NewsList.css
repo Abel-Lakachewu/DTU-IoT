@@ -1,0 +1,14 @@
+.users-listt {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    max-width: 2000rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cont {
+    margin: 40px;
+  }

@@ -1,0 +1,27 @@
+.news-app {
+    display: flex;
+    justify-content: center;
+}
+
+
+.news-item {
+    width: 220px;
+    margin-bottom: 4px;
+    padding-right: 40px;
+}
+
+.news-img {
+    width: 150px;
+}
+
+@media screen and (min-width: 560px) {
+    .news-item {
+        width: 400px;
+        padding: 10px;
+        border: 1px solid;
+        margin-bottom: 4px;
+    }
+    .news-img {
+        width: 300px;
+    }
+  }

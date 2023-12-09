@@ -1,0 +1,24 @@
+Abel      63bd8e10f0670624483b3e26
+
+Abebaw    63bd8e3af0670624483b3e27
+
+Biniyam   63bd8e5ef0670624483b3e28
+
+Angela    63bd8e82f0670624483b3e29
+
+Abebe     63bd8ebff0670624483b3e2a
+
+
+post http://localhost3000/api/conversation   <-- may be typo here
+{
+"senderId":"",
+"receiverId":""
+}
+
+
+and make an admin as
+
+Newses
+ShowNews
+PlaceItem		
+NavLinksS

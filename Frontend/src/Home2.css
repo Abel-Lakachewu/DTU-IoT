@@ -1,0 +1,705 @@
+/* .home {
+    background-color: #f1ebeb; 
+    margin: 15px;
+} */
+
+
+/*
+    ===============================
+            Home Styles
+    ===============================
+*/
+
+.home {
+    height: 500px;
+    background: url('./assets/bg6.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width: 680px){
+    .h {
+        visibility: hidden;
+    }
+  }
+
+.home .home-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.home .home-information .home-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+
+.home .home-information .home-info {
+    font-size: 35px;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+
+.home .home-information .home-desc {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px
+}
+
+.home .home-information .home-desc span {
+    color: #000
+}
+
+.home .home-information .home-btn {
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.home .home-information .home-btn:hover {
+    background: #fff;
+    color: #eb5424
+}
+
+
+
+@media (max-width:768px) {
+    .home .home-information .home-title {
+        font-size: 40px;
+        color: #fff
+    }
+    
+    .home .home-information .home-info {
+        font-size: 20px
+    }
+    
+    .home .home-information .home-desc {
+        font-size: 15px
+    }
+}
+
+@media (max-width:575px) {
+    .home .home-information .home-title {
+        font-size: 30px;
+    }
+}
+
+
+/*
+    ===============================
+            Work Styles
+    ===============================
+*/
+.work {
+    height: auto;
+    padding: 10px 0;
+    overflow: hidden;
+    background: #fff;
+    margin: 20px;
+}
+
+.work .work-title {
+    font-size: 40px; 
+}
+
+.work .work-title span {
+    font-weight: normal
+}
+
+.work .part {
+    margin-top: 20px;
+    width: 30%;
+    float: left;
+    height: auto;
+    padding: 10px 0;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 5%
+}
+
+.work .first {
+    margin-left: 0
+}
+
+.work .part .icon {
+    color: #888;
+    margin-bottom: 20px
+}
+
+.work .part .part-title {
+    font-size: 25px;
+    color: #eb5424;
+    margin-bottom: 20px
+}
+
+.work .part .line {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+.work .part .part-desc {
+    font-size: 14px;
+    color: #888;
+    padding: 20px
+}
+
+@media (max-width: 575px) {
+    .work .part {
+        width: 100%;
+        float: none;
+        margin-left: 0
+        
+    }
+}
+
+@media (min-width: 576px )and (max-width:768px) {
+    .work .part {
+        width: 47%;
+    }
+    
+    .work .last {
+        margin-left: 0
+    }
+}
+
+/*
+    ===============================
+            Portfolio Styles
+    ===============================
+*/
+
+.portfolio {
+    background: #f8f8f8;
+    padding-top: 20px; 
+    overflow: visible;
+}
+
+.portfolio .portfolio-title {
+    text-align: center;
+    font-size: 35px
+}
+
+.portfolio .portfolio-title span {
+    font-weight: normal
+}
+
+.portfolio .portfolio-list {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0
+}
+
+.portfolio .portfolio-list .portfolio-item {
+    display: inline-block;
+    width: 100px;
+    padding: 10px
+}
+
+.portfolio .portfolio-list .portfolio-item.active {
+    background: #eb5424;
+    color: #fff
+}
+
+.box div {
+    width: 25%;
+    float: left;
+    font-size: 0;
+    position: relative;
+}
+
+.box div img {
+    width: 100%
+}
+
+.box div .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(235,84,36 , 0.5);
+    font-size: 15px;
+    opacity: 0
+}
+
+.box div .overlay span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    display: block;
+   
+    cursor:default;
+    border: 2px solid #eb5424;
+}
+
+.box div:hover .overlay {
+    opacity: 1
+}
+
+@media (max-width:575px) {
+    .portfolio .portfolio-list .portfolio-item {
+        display: block;
+        margin: auto
+    }
+    
+    .box div {
+        width: 100%;
+    }
+}
+
+@media (min-width:576px) and (max-width : 768px ){
+    .box div {
+        width: 50%;
+    }
+}
+
+
+/*
+    ===============================
+       Profile + Skills Styles
+    ===============================
+*/
+
+.profile_skills {
+    padding: 50px 0;
+    overflow: visible;
+}
+
+.profile_skills .profile {
+    width: 50%;
+    float: left;
+}
+
+.profile_skills .profile .profile-list {
+    list-style: none
+}
+
+.profile_skills .profile .profile-list .profile-item {
+    margin-bottom: 8px
+}
+
+.profile_skills .profile .profile-list .profile-item span{
+    display: inline-block;
+    width: 100px;
+    font-weight: bold
+}
+
+.profile_skills .profile .profile-list .profile-item span.web {
+    font-weight: normal;
+    color: #eb5424
+}
+
+.profile_skills .skills {
+    width: 50%;
+    float: left;
+}
+
+.profile_skills .skills .skills-desc {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+.profile_skills .skills .bar {
+    overflow: hidden;
+    padding: 10px 0;
+    margin-bottom: 10px
+}
+
+.profile_skills .skills .bar .title {
+    float: left;
+}
+
+.profile_skills .skills .bar .perc {
+    float: right;
+    margin-right: 100px
+}
+
+.profile_skills .skills .bar .parent {
+    height: 2px;
+    clear: both;
+    background: #f8f8f8;
+    position: relative;
+    top: 5px
+}
+
+.profile_skills .skills .bar .parent span {
+    background: #eb5424;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+.profile_skills .skills .bar .parent span.sp1 {
+    width: 100%;
+}
+
+.profile_skills .skills .bar .parent span.sp2 {
+    width: 90%;
+}
+
+.profile_skills .skills .bar .parent span.sp3 {
+    width: 80%;
+}
+
+.profile_skills .profile .profile-title,
+.profile_skills .skills .skills-title{
+    font-size: 40px; 
+    margin-bottom: 20px
+}
+
+.profile_skills .profile .profile-title span,
+.profile_skills .skills .skills-title span{
+    font-weight: normal;
+}
+
+@media (max-width:768px) {
+    .profile_skills .profile , 
+    .profile_skills .skills {
+        width: 100%;
+        float: none
+    }
+    .profile_skills .profile {
+        margin-bottom: 20px
+    }
+}
+
+/*
+    ===============================
+            Creative Styles
+    ===============================
+*/
+
+.creative {
+    height: 500px;
+    background: url('./assets/a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.creative .creative-info {
+    padding-top: 100px;
+    width: 50%;
+    float: right;
+}
+
+.creative .creative-info .info-title {
+    font-weight: bold;
+    font-size: 50px
+}
+
+.creative .creative-info .info-title span {
+    font-weight: normal
+}
+
+.creative .creative-info .info-dir {
+    font-size: 40px;
+    color: #eb5424;
+    margin-bottom: 20px
+}
+
+.creative .creative-info .info-desc {
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.8
+}
+
+.creative .creative-info .info-desc a {
+    text-decoration: none
+}
+
+@media (max-width:991px) {
+    .creative {
+        height: auto
+    }
+    .creative .creative-info {
+        width: 100%;
+        padding-top: 10px;
+        float: none
+    }
+    
+    .creative .creative-info .info-dir {
+        font-size: 30px
+    }
+}
+
+/*
+    ===============================
+            Socail Styles
+    ===============================
+*/
+
+.social-media {
+    height: auto;
+    overflow: hidden
+}
+
+.social-media .social {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 100px 0 100px 60px
+}
+
+
+.social-media .social.face {
+    background: #3b5998;
+}
+
+.social-media .social.twitter {
+    background: #498cbf;
+}
+
+.social-media .social.pin {
+    background: #cc2127;
+}
+
+.social-media .social .icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #888;
+    float: left;
+    margin-right: 10px
+}
+
+.social-media .social p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff
+}
+
+.social-media .social p span {
+    display: block;
+    margin-bottom: 8px
+}
+
+.social-media .social p span.info2 {
+    font-weight: normal
+}
+
+@media (max-width:991px) {
+    .social-media .social {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*
+    ===============================
+            Drop Styles
+    ===============================
+*/
+
+.drop {
+    padding: 50px 0;
+    text-align: center
+}
+
+.drop .drop-title {
+    font-size: 60px;
+    margin-bottom: 30px
+}
+
+.drop .drop-title span {
+    font-weight: normal
+}
+
+.drop form {
+    width: 70%;
+    margin: auto;
+}
+
+.drop form input {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.drop form .form-input {
+    overflow: hidden
+}
+
+.drop form .form-input input {
+    width: 49%;
+}
+
+.drop form .form-input input[type=text] {
+    float: left
+}
+
+.drop form .form-input input[type=email] {
+    float: right
+}
+
+.drop form input.sub {
+    width: 100%;
+}
+
+.drop form textarea {
+    width: 100%;
+    outline: 0;
+    background: #ccc
+}
+
+.drop form input[type=submit] {
+    width: 60%;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #888;
+    cursor: pointer
+}
+
+@media (max-width:575px) {
+    .drop .drop-title {
+        font-size: 40px
+    }
+    
+    .drop form .form-input input {
+        width: 100%
+    }
+    
+    .drop form {
+        width: 90%
+    }
+}
+
+/*
+    ===============================
+            Drop Styles
+    ===============================
+*/
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    color: #888
+}
+
+.portfolio>img {
+    height: 30px;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 1.5rem;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px
+    }
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+.col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+img,
+svg {
+    vertical-align: middle
+}
+
+.pusher {
+    background-color: #f8f8f8;
+}
+
+.tt {
+    position: absolute;
+    right: 186px;
+
+}
